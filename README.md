@@ -14,7 +14,7 @@ Feel free to start doing these in any order you like.
 
 ## Testing
 1. Follow the comment above each problem to run test for that problem
-3. To tests for all the problems of this week run ```npx jest ./tests/```
+3. To tests for all the problems of this week run ```npx jest <name_of_the_test>```
 
 #### Development Setup
 1. If you have Node.js locally, you should run these on your machine 
