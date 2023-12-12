@@ -6,6 +6,22 @@
 
 function isAnagram(str1, str2) {
 
+  if(str1.length != str2.length){
+    return false;
+  }
+
+  for(let char of str1.toLowerCase()){
+    let index = str2.toLowerCase().indexOf(char);
+
+    if(index === -1){
+      return false;
+    }else{
+      str2[index] = '0'
+    }
+  }
+
+  return true;
+
 }
 
 module.exports = isAnagram;
