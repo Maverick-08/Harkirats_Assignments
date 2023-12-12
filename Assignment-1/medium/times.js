@@ -9,5 +9,22 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    
+    let sum = 0
+
+    const stamp1 = new Date();
+
+    for(let i=1;i<=n;++i){
+        sum+=i
+    }
+
+    const stamp2 = new Date();
+
+    console.log(stamp2.getMilliseconds()-stamp1.getMilliseconds()+"ms")
+    
+
+    // return 0.01;
 }
+
+calculateTime(10000)
+
